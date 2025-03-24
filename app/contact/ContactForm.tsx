@@ -50,23 +50,28 @@ export default function ContactForm({ title, submitText, type, equipment, formMe
     });
 
     async function onSubmit(values: z.infer<typeof contactFormSchema>) {
-        // await fetch('http://localhost:3000/api/contact', {
-        //     method: 'POST',
-        //     headers: {
-        //         'Content-Type': 'application/json',
-        //     },
-        //     body: JSON.stringify(values),
-        // }).then(async (response) => {
-        //     if (response.status !== 200 && !response.ok) throw new Error();
-        //     form.reset();
-        //     toast.success("Votre demande a été envoyée avec succès !")
-        // })
-        //     .catch(() => {
-        //         toast.error('Something wrong error')
-        //     });
-        alert(JSON.stringify(values, null, 2));
-        form.reset();
-        toast.success("Votre demande a été envoyée avec succès !")
+        try {
+            const formData = {
+                ...values,
+                type,
+                equipment: equipment || undefined
+            };
+
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (!response.ok) throw new Error();
+
+            form.reset();
+            toast.success("Votre demande a été envoyée avec succès !")
+        } catch (error) {
+            toast.error('Une erreur est survenue lors de l\'envoi du message');
+        }
     }
 
     return (
@@ -288,4 +293,4 @@ export default function ContactForm({ title, submitText, type, equipment, formMe
         </Form >
 
     );
-} 
+}

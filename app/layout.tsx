@@ -9,10 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'Youzoo - Matériel médical accessible',
-  description: 'Youzoo est une association à but non lucratif spécialisée dans le réemploi de matériel médical pour les enfants en situation de handicap.',
-  icons: {
-    icon: "/favicon.ico",
-  },
+  description: 'Youzoo est une association à but non lucratif spécialisée dans le réemploi de matériel médical pour les enfants en situation de handicap.'
 };
 
 export default function RootLayout({

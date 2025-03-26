@@ -1,42 +1,13 @@
-import SponsorsSection from "../SponsorsSection";
+import { Metadata } from 'next';
 
-const stats = [
-    { label: 'Transactions every 24 hours', value: '44 million' },
-    { label: 'Assets under holding', value: '$119 trillion' },
-    { label: 'New users annually', value: '46,000' },
-]
-const values = [
-    {
-        name: 'Be world-class',
-        description:
-            'Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.',
+export const metadata: Metadata = {
+    title: 'À propos | Youzoo - Matériel médical accessible',
+    description: 'Youzoo facilite l\'accès au matériel médical pour les enfants en situation de handicap en tant qu\'acteur de l\'économie circulaire, spécialisé dans le réemploi de matériel médical.',
+    openGraph: {
+        title: 'À propos de Youzoo',
+        description: 'Découvrez notre mission pour rendre le matériel médical plus accessible aux enfants en situation de handicap.',
     },
-    {
-        name: 'Share everything you know',
-        description:
-            'Mollitia delectus a omnis. Quae velit aliquid. Qui nulla maxime adipisci illo id molestiae. Cumque cum ut minus rerum architecto magnam consequatur. Quia quaerat minima.',
-    },
-    {
-        name: 'Always learning',
-        description:
-            'Aut repellendus et officiis dolor possimus. Deserunt velit quasi sunt fuga error labore quia ipsum. Commodi autem voluptatem nam. Quos voluptatem totam.',
-    },
-    {
-        name: 'Be supportive',
-        description:
-            'Magnam provident veritatis odit. Vitae eligendi repellat non. Eum fugit impedit veritatis ducimus. Non qui aspernatur laudantium modi. Praesentium rerum error deserunt harum.',
-    },
-    {
-        name: 'Take responsibility',
-        description:
-            'Sit minus expedita quam in ullam molestiae dignissimos in harum. Tenetur dolorem iure. Non nesciunt dolorem veniam necessitatibus laboriosam voluptas perspiciatis error.',
-    },
-    {
-        name: 'Enjoy downtime',
-        description:
-            'Ipsa in earum deserunt aut. Quos minus aut animi et soluta. Ipsum dicta ut quia eius. Possimus reprehenderit iste aspernatur ut est velit consequatur distinctio.',
-    },
-]
+};
 
 export default function AboutPage() {
     return (
@@ -139,23 +110,12 @@ export default function AboutPage() {
                             </div>
                         </div>
                         <div>
-                            {/* aspect-[5/2]  */}
                             <img
                                 alt=""
                                 src="/eco_circulaire.png"
                                 className="w-full object-cover rounded-3xl"
                             />
                         </div>
-                        {/* <div className="lg:flex lg:flex-auto lg:justify-center">
-                            <dl className="w-64 space-y-8 xl:w-80">
-                                {stats.map((stat) => (
-                                    <div key={stat.label} className="flex flex-col-reverse gap-y-4">
-                                        <dt className="text-base leading-7 text-theme-primary-800">{stat.label}</dt>
-                                        <dd className="text-5xl font-semibold tracking-tight text-theme-primary-800">{stat.value}</dd>
-                                    </div>
-                                ))}
-                            </dl>
-                        </div> */}
                     </div>
                 </div>
             </div>
@@ -168,25 +128,6 @@ export default function AboutPage() {
                     className="aspect-[5/2] w-full object-cover xl:rounded-3xl"
                 />
             </div>
-
-            {/* Values section */}
-            {/* <div className="mx-auto my-24 max-w-7xl px-6 lg:px-8">
-                <div className="mx-auto max-w-2xl lg:mx-0">
-                    <h2 className="text-3xl font-bold tracking-tight text-theme-primary-800 sm:text-4xl">Nos valeurs</h2>
-                    <p className="mt-6 text-lg leading-8 text-theme-primary-800">
-                        Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in
-                        accusamus quisquam.
-                    </p>
-                </div>
-                <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                    {values.map((value) => (
-                        <div key={value.name}>
-                            <dt className="font-semibold text-theme-primary-800">{value.name}</dt>
-                            <dd className="mt-1 text-theme-primary-800">{value.description}</dd>
-                        </div>
-                    ))}
-                </dl>
-            </div> */}
         </div>
     );
 }

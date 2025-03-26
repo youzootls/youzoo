@@ -1,7 +1,16 @@
 import { prisma } from '@/lib/prisma';
-import { equipmentsMock } from '../api/data-mock';
+import { Metadata } from 'next';
 import ContactContent from './ContactContent';
 import ContactForm from './ContactForm';
+
+export const metadata: Metadata = {
+    title: 'Contact | Youzoo - Matériel médical accessible',
+    description: 'Contactez Youzoo pour vos demandes de matériel médical, dons d\'équipement ou toute autre question concernant notre service de réemploi de Matériel médical accessible.',
+    openGraph: {
+        title: 'Contactez Youzoo',
+        description: 'Formulaire de contact pour vos demandes de matériel médical et dons d\'équipement.',
+    },
+};
 
 export default async function ContactPage({ searchParams }: {
     searchParams?: {

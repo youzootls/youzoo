@@ -16,6 +16,8 @@ import {
 import { Button } from '@/components/ui/button';
 import { prisma } from "@/lib/prisma";
 import Link from 'next/link';
+import { Metadata } from 'next';
+
 interface Props {
     params: {
         id: string;
@@ -23,6 +25,30 @@ interface Props {
 }
 
 export const dynamic = 'force-dynamic';
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const equipment = await prisma.equipment.findUnique({
+        where: { id: params.id },
+        include: { category: true }
+    });
+
+    if (!equipment) {
+        return {
+            title: 'Équipement non trouvé | Youzoo',
+            description: 'L\'équipement recherché n\'existe pas ou n\'est plus disponible.',
+        };
+    }
+
+    return {
+        title: `${equipment.name} | ${equipment.category.name} | Youzoo`,
+        description: equipment.description.substring(0, 160),
+        openGraph: {
+            title: `${equipment.name} - ${equipment.manufacturer}`,
+            description: equipment.description.substring(0, 160),
+            images: [equipment.image],
+        },
+    };
+}
 
 export default async function EquipmentPage({ params }: Props) {
     const equipment = await prisma.equipment.findUnique({

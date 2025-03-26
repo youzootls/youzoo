@@ -41,10 +41,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
     return {
         title: `${equipment.name} | ${equipment.category.name} | Youzoo`,
-        description: equipment.description.substring(0, 160),
+        description: equipment.description?.substring(0, 160),
         openGraph: {
             title: `${equipment.name} - ${equipment.manufacturer}`,
-            description: equipment.description.substring(0, 160),
+            description: equipment.description?.substring(0, 160),
             images: [equipment.image],
         },
     };

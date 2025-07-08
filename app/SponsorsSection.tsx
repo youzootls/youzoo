@@ -33,6 +33,11 @@ const sponsors = [
         imageSrc: '/sponsors/france_active.png',
         imageAlt: 'France Active',
     },
+    {
+        name: 'Parcours Adress',
+        imageSrc: '/sponsors/parcours_adress.png',
+        imageAlt: 'Parcours Adress logo',
+    },
 ];
 
 export default function SponsorsSection() {

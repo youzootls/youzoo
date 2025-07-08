@@ -48,6 +48,16 @@ const sponsors = [
         imageSrc: '/sponsors/fondation_credit_agricole_toulouse_31.png',
         imageAlt: 'Fondation Credit Agricole Toulouse 31 logo',
     },
+    {
+        name: 'Assurance Maladie - Haute-Garonne',
+        imageSrc: '/sponsors/logo_ameli-haute_garonne.png',
+        imageAlt: 'Assurance Maladie - Haute-Garonne',
+    },
+    {
+        name: 'Toulouse Métropole',
+        imageSrc: '/sponsors/logo_toulouse_metropole.png',
+        imageAlt: 'Toulouse Métropole',
+    },
 ];
 
 export default function SponsorsSection() {

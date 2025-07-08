@@ -38,6 +38,11 @@ const sponsors = [
         imageSrc: '/sponsors/parcours_adress.png',
         imageAlt: 'Parcours Adress logo',
     },
+    {
+        name: 'Fondation Baker Tilly et Oratio',
+        imageSrc: '/sponsors/fondation_baker_tilly_oratio.png',
+        imageAlt: 'Fondation Baker Tilly et Oratio logo',
+    },
 ];
 
 export default function SponsorsSection() {

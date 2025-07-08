@@ -45,7 +45,7 @@ const sponsors = [
     },
     {
         name: 'Fondation Credit Agricole Toulouse 31',
-        imageSrc: '/sponsors/fondationcreditagricoletoulouse31.png',
+        imageSrc: '/sponsors/fondationcreditagricole_toulouse31.png',
         imageAlt: 'Fondation Credit Agricole Toulouse 31 logo',
     },
 ];

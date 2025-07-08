@@ -43,6 +43,11 @@ const sponsors = [
         imageSrc: '/sponsors/fondation_baker_tilly_oratio.png',
         imageAlt: 'Fondation Baker Tilly et Oratio logo',
     },
+    {
+        name: 'Fondation Credit Agricole Toulouse 31',
+        imageSrc: '/sponsors/fondationcreditagricoletoulouse31.png',
+        imageAlt: 'Fondation Credit Agricole Toulouse 31 logo',
+    },
 ];
 
 export default function SponsorsSection() {

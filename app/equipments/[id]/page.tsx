@@ -120,27 +120,6 @@ export default async function EquipmentPage({ params }: Props) {
                                 Additional details
                             </h2>
 
-                            <div className="p-2 mb-2 border drop-shadow-sm border-gray-200 rounded-md">
-                                <h4>Tarifs de la location 000</h4>
-                                <ul className="list-disc pl-2">
-                                    <li>Prix de la location / jour : 20000000€</li>
-                                    <li>Prix de la location / week-end : 30€</li>
-                                    <li>Prix de la location / semaine : 40€</li>
-                                    <li>Prix de la location / mois : 50€</li>
-                                </ul>
-                            </div>
-                            <div className="p-2 mb-2 border border-gray-200 rounded-md">
-                                <h4>Tarif vente d’occasion YOUZOO</h4>
-                                <p>100€</p>
-                            </div>
-                            <div className="p-2 mb-2 border border-gray-200 rounded-md">
-                                <h4>Autres frais</h4>
-                                <ul className="list-disc pl-2">
-                                    <li>Prévoir adhésion à l’association : 10€/an</li>
-                                    <li>Caution pour la location : 100€</li>
-                                </ul>
-                            </div>
-
                             <div className="divide-y divide-gray-200 border-t">
 
                                 <Accordion type="single" collapsible className="w-full">

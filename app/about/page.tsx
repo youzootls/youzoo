@@ -119,7 +119,7 @@ export default function AboutPage() {
                     </div>
                 </div>
             </div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/gLzN1bAJx6Y?si=gCiA1LMRhbziLaAs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen class="my-24 mx-auto xl:max-w-7xl xl:px-8"></iframe>
+            <iframe class="my-24 mx-auto xl:max-w-7xl xl:px-8" width="560" height="315" src="https://www.youtube.com/embed/gLzN1bAJx6Y?si=gCiA1LMRhbziLaAs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             {/* Image section */}
             <div className="my-24 xl:mx-auto xl:max-w-7xl xl:px-8">
                 <img

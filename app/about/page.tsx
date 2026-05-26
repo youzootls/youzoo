@@ -119,7 +119,6 @@ export default function AboutPage() {
                     </div>
                 </div>
             </div>
-            {/* Youtube Video */}
             <div className="my-24 xl:mx-auto xl:max-w-7xl xl:px-8">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/gLzN1bAJx6Y?si=gCiA1LMRhbziLaAs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>

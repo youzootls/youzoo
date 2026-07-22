@@ -131,3 +131,8 @@ export default function AboutPage() {
         </div>
     );
 }
+<p>
+  <a href="about/FLYER YOUZOO.pdf" download class="btn">
+    📄 Télécharger notre flyer (PDF)
+  </a>
+</p>
